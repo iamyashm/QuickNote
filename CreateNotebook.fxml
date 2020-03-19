@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="682.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CreateNotebookController">
+
+   <children>
+      <Text fill="#2e53da" fontSmoothingType="LCD" layoutX="35.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Notebook" wrappingWidth="202.936767578125">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="titleTf" focusColor="#48a7e2" layoutX="41.0" layoutY="87.0" prefHeight="26.0" prefWidth="173.0" promptText="Notebook Title" unFocusColor="#1f098c" />
+      <JFXButton fx:id="createBtn" layoutX="35.0" layoutY="171.0" onMouseClicked="#createBtnHandler" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #0f5fd0;" text="Create" textFill="WHITE" />
+      <JFXButton fx:id="backBtn" layoutX="162.0" layoutY="171.0" onMouseClicked="#backBtnHandler" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #0f5fd0;" text="Back" textFill="WHITE" />
+      <Text fx:id="successMsg" fill="#1be576" layoutX="41.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notebook created." visible="false" wrappingWidth="196.53671264648438" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="882.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DashboardController">
+   <children>
+      <VBox prefHeight="501.0" prefWidth="200.0" style="-fx-background-color: #008adc;" stylesheets="@Navbar.css">
+         <children>
+            <HBox prefHeight="2.0" prefWidth="193.0" spacing="5.0">
+               <children>
+                  <Circle fx:id="btnClose" fill="#fc7147" onMouseClicked="#btnCloseHandler" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#ffdc1f" layoutX="16.0" layoutY="16.0" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#16c207" layoutX="28.0" layoutY="16.0" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" top="9.0" />
+               </VBox.margin>
+            </HBox>
+            <Text fx:id="welcomeMsg" fill="#e7efff" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi, Fname Lname." textAlignment="CENTER" wrappingWidth="200.92654418945312">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <VBox.margin>
+                  <Insets bottom="30.0" top="30.0" />
+               </VBox.margin>
+            </Text>
+            <JFXButton fx:id="navNotebook" onMouseClicked="#navEventHandler" prefHeight="43.0" prefWidth="200.0" ripplerFill="#2f7fff" text="Notebooks" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="navReminder" layoutX="10.0" layoutY="10.0" onMouseClicked="#navEventHandler" prefHeight="43.0" prefWidth="200.0" ripplerFill="#2f7fff" text="Reminders" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="navShared" layoutX="10.0" layoutY="53.0" onMouseClicked="#navEventHandler" prefHeight="43.0" prefWidth="200.0" ripplerFill="#2f7fff" text="Shared Notes" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="navProfile" layoutX="10.0" layoutY="96.0" onMouseClicked="#navEventHandler" prefHeight="43.0" prefWidth="200.0" ripplerFill="#2f7fff" text="Profile" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="navLogout" layoutX="10.0" layoutY="140.0" onMouseClicked="#navEventHandler" prefHeight="43.0" prefWidth="200.0" ripplerFill="#2f7fff" text="Logout" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="mainPane" layoutX="202.0" prefHeight="501.0" prefWidth="682.0" />
+   </children>
+</AnchorPane>

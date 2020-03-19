@@ -1,0 +1,64 @@
+.jfx-button {
+	-fx-background-color: "#008adc";
+}
+
+.jfx-button:hover {
+	-fx-background-color: "#0f5fd0";
+}
+
+.root {
+	-fx-control-inner-background-alt : -fx-control-inner-background;
+}
+
+.table-view {
+	-fx-background-color: transparent;
+}
+
+.table-column {
+	-fx-alignment: CENTER;
+}
+
+.table-view .column-header {
+    -fx-background-color: "#293aa6";
+    -fx-font-size: 15px;
+    -fx-size: 40px;
+}
+
+.table-view .column-header-background .label {
+    -fx-text-fill: white;
+}
+
+.table-row-cell {
+	-fx-cell-size: 40px;
+}
+
+.table-row-cell .text {
+	-fx-fill: "#0f5fd0";
+}
+
+
+.table-row-cell:selected {
+	-fx-background-color:"#0f5fd0" ;	
+}
+
+.table-row-cell:selected .text {
+	-fx-fill:"#fff" ;	
+}
+
+
+.table-view *.scroll-bar:horizontal *.increment-button,
+.table-view *.scroll-bar:horizontal *.decrement-button {
+  -fx-background-color: null;
+  -fx-background-radius: 0;
+  -fx-background-insets: 0;
+  -fx-padding: 0;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-arrow,
+.table-view *.scroll-bar:horizontal *.decrement-arrow {
+  -fx-background-color: null;
+  -fx-background-radius: 0;
+  -fx-background-insets: 0;
+  -fx-padding: 0;
+  -fx-shape: null;
+}
