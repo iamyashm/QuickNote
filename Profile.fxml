@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="501.0" prefWidth="682.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProfileController">
+   <children>
+      <Text fill="#0f5fd0" layoutX="31.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Account" wrappingWidth="242.13670349121094">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="#0074c2" layoutX="31.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" wrappingWidth="63.736724853515625">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#0074c2" layoutX="31.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :" wrappingWidth="77.81378173828125">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#0074c2" layoutX="29.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :" wrappingWidth="53.291015625">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="nameText" fill="#389ce8" layoutX="141.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="230.1366424560547">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="usernameText" fill="#389ce8" layoutX="141.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="204.5366668701172">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="emailText" fill="#389ce8" layoutX="141.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="164.53672790527344">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="changePassBtn" layoutX="30.0" layoutY="238.0" onMouseClicked="#changePass" style="-fx-background-color: #0f5fd0;" text="Change Password" textFill="WHITE" />
+      <JFXPasswordField fx:id="oldPassTf" focusColor="#34a7ff" layoutX="26.0" layoutY="303.0" prefHeight="26.0" prefWidth="230.0" promptText="Enter old password" unFocusColor="#0f5fd0" visible="false" />
+      <JFXPasswordField fx:id="newPassTf" focusColor="#25d3ff" layoutX="26.0" layoutY="354.0" prefHeight="26.0" prefWidth="230.0" promptText="Enter new password" unFocusColor="#0f5fd0" visible="false" />
+      <JFXButton fx:id="confirmBtn" layoutX="30.0" layoutY="414.0" onMouseClicked="#confirmChangePassword" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #0f5fd0;" text="Confirm" textFill="WHITE" visible="false" />
+      <Text fx:id="successMsg" fill="#1ff551" layoutX="31.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password changed successfully." visible="false" wrappingWidth="191.20000000000005" />
+   </children>
+</AnchorPane>

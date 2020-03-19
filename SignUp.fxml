@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignUpController">
+   <right>
+      <AnchorPane prefHeight="453.0" prefWidth="383.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXTextField fx:id="fnameTf" focusColor="#56a2ed" layoutX="58.0" layoutY="102.0" prefHeight="26.0" prefWidth="235.0" promptText="First Name" unFocusColor="#00208a" />
+            <JFXPasswordField fx:id="passwordTf" focusColor="#56a2ed" layoutX="57.0" layoutY="301.0" prefHeight="26.0" prefWidth="238.0" promptText="Password" unFocusColor="#00208a" />
+            <JFXButton fx:id="createAccBtn" buttonType="RAISED" layoutX="193.0" layoutY="377.0" onAction="#createAcc" prefHeight="26.0" prefWidth="110.0" ripplerFill="#0f64c5" style="-fx-background-color: #1dacd6;" text="Create Account" textFill="WHITE" />
+            <Text fill="#1dacd6" fontSmoothingType="LCD" layoutX="59.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Account" wrappingWidth="207.7366943359375">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Text>
+            <Text fx:id="invalidLoginMsg" fill="#ea0202" fontSmoothingType="LCD" layoutX="67.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Incorrect username or password." visible="false" wrappingWidth="206.93670654296875" />
+            <JFXTextField fx:id="lnameTf" focusColor="#56a2ed" layoutX="57.0" layoutY="153.0" prefHeight="26.0" prefWidth="238.0" promptText="Last Name" unFocusColor="#00208a" />
+            <JFXTextField fx:id="emailTf" focusColor="#56a2ed" layoutX="56.0" layoutY="198.0" prefHeight="26.0" prefWidth="240.0" promptText="Email ID" unFocusColor="#00208a" />
+            <JFXTextField fx:id="usernameTf" focusColor="#56a2ed" layoutX="55.0" layoutY="247.0" prefHeight="26.0" prefWidth="242.0" promptText="Username" unFocusColor="#00208a" />
+            <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#backToLogin" opacity="0.38" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/PinClipart.com_fall-back-clip-art_1028215.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="successMsg" fill="#21d54e" fontSmoothingType="LCD" layoutX="59.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account created successfully." visible="false" wrappingWidth="172.5367431640625" />
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="450.0" prefWidth="368.0" style="-fx-background-color: linear-gradient(to right, #36d1dc, #5b86e5);" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="102.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/icons8-note-100.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="89.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QuickNote" textAlignment="CENTER" wrappingWidth="175.8015594482422">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="33.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A lightweight note and list making app" textAlignment="CENTER" wrappingWidth="288.5367240905762">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <HBox layoutX="10.0" layoutY="14.0" prefHeight="6.0" prefWidth="45.0" spacing="5.0">
+               <children>
+                  <Circle fx:id="btnClose" fill="#fc7147" onMouseClicked="#btnCloseHandler" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#ffdc1f" layoutX="16.0" layoutY="16.0" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#16c207" layoutX="28.0" layoutY="16.0" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+               </children>
+            </HBox>
+         </children></AnchorPane>
+   </left>
+   <effect>
+      <DropShadow />
+   </effect>
+</BorderPane>

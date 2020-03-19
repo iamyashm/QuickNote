@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="682.0" style="-fx-background-color: #fff;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NotebooksController">
+   <children>
+      <JFXButton fx:id="createNb" layoutX="153.0" layoutY="451.0" onMouseClicked="#createNbHandler" style="-fx-background-color: #0f5fd0;" text="Create Notebook" textFill="WHITE" />
+      <JFXButton fx:id="deleteNb" layoutX="302.0" layoutY="451.0" onMouseClicked="#deleteNbHandler" style="-fx-background-color: #0f5fd0;" text="Delete Notebook" textFill="WHITE" />
+      <JFXButton fx:id="openNb" layoutX="448.0" layoutY="451.0" onMouseClicked="#openNbHandler" style="-fx-background-color: #0f5fd0;" text="Open Notebook" textFill="WHITE" />
+      <TableView fx:id="notebookTable" layoutX="-1.0" prefHeight="411.0" prefWidth="682.0">
+        <columns>
+          <TableColumn fx:id="titleColumn" prefWidth="681.5999816894531" text="Notebook Title" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
